@@ -9,6 +9,7 @@ def IsBadVersion(x):
     else:
         return False
 
+# Main function to divide the versions list into two chuncks and check each version
 def RecursiveBinaryFunction(min, max):
     if IsBadVersion(max):
         global lastMax
@@ -33,6 +34,8 @@ def CheckRecursionStatus(min, max):
     else:
         return True
 
+
+# data member and function declaration here
 min = 1
 max = 10000000
 lastMax = max
